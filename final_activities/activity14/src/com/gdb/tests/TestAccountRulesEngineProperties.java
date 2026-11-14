@@ -36,7 +36,7 @@ public class TestAccountRulesEngineProperties {
     }
 
     public void propertiesLoaderTest() {
-        AccountRulesPropertiesLoader loader = new AccountRulesPropertiesLoader("src/main/resources/config/rules/savings.properties");
+         AccountRulesPropertiesLoader loader = new AccountRulesPropertiesLoader("src/main/resources/config/rules/savings.properties");
         if (loader.getDouble("min.balance.new", 0) == 10000.0
                 && loader.getDouble("interest.rate.privilege", 0) == 4.00
                 && loader.getProperty("missing", "default").equals("default")) {
